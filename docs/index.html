@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="javamon.css">
+    <title>Gotta code 'em all!</title>
+</head>
+<body>
+    <div id="intro">
+        <div><h1>Welcome to Javamon!</h1></div>
+        <div><p>Think of Pokemon. Now think of Javamon. If you thought of the same thing both times, you're right!<br>
+            <br>
+            Javamon will take you through the fight scene of of Pokemon. You'll pick your Javamon and engage in battle!<br>
+            <br>
+            Player 1, you'll be using the WASD keys to choose your moves, and Player 2 will use the arrow Keys<br>
+            <br>
+            You can use spacebar or the enter key to click the respective button on each screen.
+        </p>
+        </div>
+        <div><button id="play">Play</button></div>
+    </div>
+    <canvas id="canvas" class="display-none"></canvas>
+
+    <div id="after-canvas" class="display-none"></div>
+    <div id="javamon-div"></div>
+
+    <div id="players-party">
+        <div id="player1-party">
+            <!-- <h3>Player 1's Party</h3> -->
+            <div id="ul"><ul></ul></div>
+        </div>
+        <div id="player2-party">
+            <!-- <h3>Player 2's Party</h3> -->
+            <div><ul></ul></div>
+        </div>
+    </div>
+
+    <div id="fight-scene">        
+        <div class="column1">
+            <div class="player1"><img id="player1"></div>
+           <div id="player1-name"><p class="display-none">Player1Name</p></div>
+            <div id="health1-div"><canvas id="health1" class="display-none"></canvas></div>
+        </div>
+        <div class="column2">
+            <div class="player2"><img id="player2"></div>
+            <div id="player2-name"><p class="display-none">Player2Name</p></div>
+            <div id="health2-div"><canvas id="health2" class="display-none"></canvas></div>
+        </div>
+    </div>
+    <div id="column-div" class="display-none">
+        <div id="column1"></div>
+        <div id="column2"></div>
+    </div>
+    <div id="next-div"><button id="next" class="display-none">Next</button></div>
+
+    <div><button id="fight" class="display-none">Fight!</button></div>
+    <div><button id="next2" class="display-none">Play!</button></div>
+<script src="javamon.js"></script>
+</body>
+</html>
