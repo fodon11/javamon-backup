@@ -373,6 +373,9 @@ randomLobby = Math.floor(Math.random()*lobby.length)
 // Random number for background and victory songs
 randomSongNum = Math.floor(Math.random()*backgroundSong.length)
 
+// Random number for victory
+randomVictoryNum = Math.floor(Math.random()*victorySong.length)
+
 // Plays random lobby song every time page loads
 function randomLobbySong(order){
     switch (order){
@@ -391,7 +394,7 @@ function randomBackgroundSong(play){
 
 function randomVictorySong(play){
     switch (play){
-        case 'play': victorySong[randomSongNum].song.play(); break;
+        case 'play': victorySong[randomVictoryNum].song.play(); break;
     }
 }
 
@@ -1573,7 +1576,10 @@ function playRandomMoveSound(){
 function gameOver(){
     fight.className = 'display-none';
     deleteMoves();
+    columnDiv.remove();
     next2.className = 'display-none';
+    next1.className = 'display-none';
+    randomBackgroundSong('pause');
     document.getElementById('fight-scene').remove();
     createGameOverScreen();
     randomVictorySong('play');
