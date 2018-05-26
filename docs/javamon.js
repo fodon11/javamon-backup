@@ -272,18 +272,18 @@ function MoveSound(src){
     moveSound.push(this);
 }
 
-let moveSound1 = new MoveSound('/sounds/moves/move1.mp3');
-let moveSound10 = new MoveSound('/sounds/moves/move10.mp3');
-let moveSound11 = new MoveSound('/sounds/moves/move11.mp3');
-let moveSound12 = new MoveSound('/sounds/moves/move12.mp3');
-let moveSound2 = new MoveSound('/sounds/moves/move2.mp3');
-let moveSound3 = new MoveSound('/sounds/moves/move3.mp3');
-let moveSound4 = new MoveSound('/sounds/moves/move4.mp3');
-let moveSound5 = new MoveSound('/sounds/moves/move5.mp3');
-let moveSound6 = new MoveSound('/sounds/moves/move6.mp3');
-let moveSound7 = new MoveSound('/sounds/moves/move7.mp3');
-let moveSound8 = new MoveSound('/sounds/moves/move8.mp3');
-let moveSound9 = new MoveSound('/sounds/moves/move9.mp3');
+let moveSound1 = new MoveSound('sounds/moves/move1.mp3');
+let moveSound10 = new MoveSound('sounds/moves/move10.mp3');
+let moveSound11 = new MoveSound('sounds/moves/move11.mp3');
+let moveSound12 = new MoveSound('sounds/moves/move12.mp3');
+let moveSound2 = new MoveSound('sounds/moves/move2.mp3');
+let moveSound3 = new MoveSound('sounds/moves/move3.mp3');
+let moveSound4 = new MoveSound('sounds/moves/move4.mp3');
+let moveSound5 = new MoveSound('sounds/moves/move5.mp3');
+let moveSound6 = new MoveSound('sounds/moves/move6.mp3');
+let moveSound7 = new MoveSound('sounds/moves/move7.mp3');
+let moveSound8 = new MoveSound('sounds/moves/move8.mp3');
+let moveSound9 = new MoveSound('sounds/moves/move9.mp3');
 
 
 // Stores victory songs to be picked at random
@@ -301,9 +301,9 @@ function VictorySong(name, src){
     pushVictory(this);
 }
 
-let gymVictory = new VictorySong('Gym Victory', '/sounds/victory-music/yellow/gym-victory.mp3');
-let trainerVictory = new VictorySong('Trainer Victory', '/sounds/victory-music/yellow/trainer-victory.mp3');
-let wildVictory = new VictorySong('Wild', '/sounds/victory-music/yellow/wild-victory.mp3');
+let gymVictory = new VictorySong('Gym Victory', 'sounds/victory-music/yellow/gym-victory.mp3');
+let trainerVictory = new VictorySong('Trainer Victory', 'sounds/victory-music/yellow/trainer-victory.mp3');
+let wildVictory = new VictorySong('Wild', 'sounds/victory-music/yellow/wild-victory.mp3');
 
 
 window.onload = function java(){
