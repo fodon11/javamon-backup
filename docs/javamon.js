@@ -1367,6 +1367,8 @@ function Fight(){
         if (player1Move) player1Move = null;
         if (player2Move) player2Move = null;
         // showJavamon(current1Javamon, current2Javamon)
+        setTimeout(function(){showJavamon(current1Javamon, current2Javamon)}, 1000);
+
         if (current2Javamon.health <= 0){
             current2Dead();
         }
@@ -1390,6 +1392,8 @@ function Fight(){
         if (current1Javamon.health <= 0){
             current1Dead();
         }
+        setTimeout(function(){showJavamon(current1Javamon, current2Javamon)}, 1000);
+
         // setTimeout(function(){showJavamon(current1Javamon, current2Javamon)}, 2000);
     }
     if (current1 && current2){
@@ -1425,6 +1429,8 @@ function Fight(){
         //     console.log(current1Javamon.name + ' to the rescue!');
         //     console.log('')
         // }
+        setTimeout(function(){showJavamon(current1Javamon, current2Javamon)}, 1000);
+
         if (player1Javamon.length === 0){
             console.log('Player 1 has no more Javamon!')
             console.log('Player 2 has won!')
@@ -1491,8 +1497,8 @@ function Fight(){
         // if (player2Move) player2Move = null;
         // changeHealth();w
     }
-    setTimeout(function(){showJavamon(current1Javamon, current2Javamon)}, 1000);
-
+    // setTimeout(function(){showJavamon(current1Javamon, current2Javamon)}, 1000);
+    // setTimeout(function(){showJavamon(current1Javamon, current2Javamon)}, 2000);
 }
 next2.onclick = function(){
     resetOptions();
