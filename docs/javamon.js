@@ -1589,7 +1589,7 @@ function createGameOverScreen(){
     gameOver = document.createElement('div');
     heading = document.createElement('h1');
     party = document.createElement('div');
-    // if (player1Javamon.length === 0){
+    if (player1Javamon.length === 0){
         heading.innerHTML = 'Congratulations Player 2!!';
         for (var i = 0; i< player2W.length; i++){
             soda = player2W[i].sprite2;
@@ -1597,7 +1597,7 @@ function createGameOverScreen(){
             img.src = soda;
             party.appendChild(img);
         }
-    /* // } else  */if (player2Javamon.length === 0){
+    } else if (player2Javamon.length === 0){
         heading.innerHTML = 'Congratulations Player 1!!';
         for (var i = 0; i< player1W.length; i++){
             soda = player1W[i].sprite2;
