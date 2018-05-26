@@ -203,7 +203,7 @@ function Background(name, src, floor){
     background.push(this);
 }
 
-let greens = new Background('greens', '/images/greens.jpg', '/images/greens-floor.png')
+let greens = new Background('greens', 'images/greens.jpg', 'images/greens-floor.png')
 
 // Stores music for lobby to be picked at random
 let lobby = [];
