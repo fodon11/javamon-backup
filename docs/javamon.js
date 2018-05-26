@@ -1489,9 +1489,10 @@ function Fight(){
         // if (current2)current2Javamon = current2;
         // if (player1Move) player1Move = null;
         // if (player2Move) player2Move = null;
-        setTimeout(function(){showJavamon(current1Javamon, current2Javamon)}, 1000);
         // changeHealth();w
     }
+    setTimeout(function(){showJavamon(current1Javamon, current2Javamon)}, 1000);
+
 }
 next2.onclick = function(){
     resetOptions();
