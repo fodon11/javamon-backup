@@ -203,7 +203,7 @@ function Background(name, src, floor){
     background.push(this);
 }
 
-let greens = new Background('greens', 'images/greens.jpg', 'images/greens-floor.png')
+let greens = new Background('greens', '../docs/images/greens.jpg', '../docs/images/greens-floor.png')
 
 // Stores music for lobby to be picked at random
 let lobby = [];
@@ -251,16 +251,16 @@ function BackgroundSong(name, backgroundSrc){
     pushMusic(this);
 }
 
-let gymBattle = new BackgroundSong('Gym Battle', '/sounds/battle-music/yellow/gym-battle.mp3');
-let trainerBattle = new BackgroundSong('Trainer Battle', '/sounds/battle-music/yellow/trainer-battle.mp3');
-let wildBattle = new BackgroundSong('Wild Battle', '/sounds/battle-music/yellow/wild-battle.mp3')
-let championBattle = new BackgroundSong('Pearl Champion Battle', 'sounds/battle-music/pearl/champion-battle.mp3')
-let pearlWild = new BackgroundSong('Pearl Wild Battle', '/sounds/battle-music/pearl/wild-battle.mp3');
-let pearlTrainer = new BackgroundSong('Pearl Trainer Batlle', '/sounds/battle-music/pearl/trainer-battle.mp3');
-let pearlGym = new BackgroundSong('Pearl Gym Battle', '/sounds/battle-music/pearl/gym-battle.mp3');
-let pearlGalactic = new BackgroundSong('Pearl Galactic Battle', '/sounds/battle-music/pearl/galactic-battle.mp3');
-let pearlElite = new BackgroundSong('Pearl Elite Battle', '/sounds/battle-music/pearl/elite-battle.mp3');
-let heartgoldEntei = new BackgroundSong('HeartGold Entei Battle', '/sounds/battle-music/heartgold/entei-battle.mp3');
+let gymBattle = new BackgroundSong('Gym Battle', '../docs/sounds/battle-music/yellow/gym-battle.mp3');
+let trainerBattle = new BackgroundSong('Trainer Battle', '../docs/sounds/battle-music/yellow/trainer-battle.mp3');
+let wildBattle = new BackgroundSong('Wild Battle', '../docs/sounds/battle-music/yellow/wild-battle.mp3')
+let championBattle = new BackgroundSong('Pearl Champion Battle', '../docs/sounds/battle-music/pearl/champion-battle.mp3')
+let pearlWild = new BackgroundSong('Pearl Wild Battle', '../docs/sounds/battle-music/pearl/wild-battle.mp3');
+let pearlTrainer = new BackgroundSong('Pearl Trainer Batlle', '../docs/sounds/battle-music/pearl/trainer-battle.mp3');
+let pearlGym = new BackgroundSong('Pearl Gym Battle', '../docs/sounds/battle-music/pearl/gym-battle.mp3');
+let pearlGalactic = new BackgroundSong('Pearl Galactic Battle', '../docs/sounds/battle-music/pearl/galactic-battle.mp3');
+let pearlElite = new BackgroundSong('Pearl Elite Battle', '../docs/sounds/battle-music/pearl/elite-battle.mp3');
+let heartgoldEntei = new BackgroundSong('HeartGold Entei Battle', '../docs/sounds/battle-music/heartgold/entei-battle.mp3');
 
 // Array which stores all move sounds
 let moveSound = [];
