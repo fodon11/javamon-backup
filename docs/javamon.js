@@ -219,17 +219,17 @@ function Lobby(src){
     lobby.push(this);
 }
 
-new Lobby('sounds/lobby-music/battle-hall.mp3');
-new Lobby('sounds/lobby-music/battle-tower-reception.mp3');
-new Lobby('sounds/lobby-music/bills-origin.mp3');
-new Lobby('sounds/lobby-music/celadon-city.mp3');
-new Lobby('sounds/lobby-music/ending.mp3');
-new Lobby('sounds/lobby-music/mt-moon-cave.mp3');
-new Lobby('sounds/lobby-music/opening.mp3');
-new Lobby('sounds/lobby-music/palette-town.mp3');
-new Lobby('sounds/lobby-music/pokemon-center.mp3');
-new Lobby('sounds/lobby-music/pokemon-gym.mp3');
-new Lobby('sounds/lobby-music/pokemon-gym2.mp3');
+new Lobby('docs/sounds/lobby-music/battle-hall.mp3');
+new Lobby('docs/sounds/lobby-music/battle-tower-reception.mp3');
+new Lobby('docs/sounds/lobby-music/bills-origin.mp3');
+new Lobby('docs/sounds/lobby-music/celadon-city.mp3');
+new Lobby('docs/sounds/lobby-music/ending.mp3');
+new Lobby('docs/sounds/lobby-music/mt-moon-cave.mp3');
+new Lobby('docs/sounds/lobby-music/opening.mp3');
+new Lobby('docs/sounds/lobby-music/palette-town.mp3');
+new Lobby('docs/sounds/lobby-music/pokemon-center.mp3');
+new Lobby('docs/sounds/lobby-music/pokemon-gym.mp3');
+new Lobby('docs/sounds/lobby-music/pokemon-gym2.mp3');
 
 // Stores background music to be stored at random
 let backgroundSong = [];
