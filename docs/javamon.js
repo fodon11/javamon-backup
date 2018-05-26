@@ -389,6 +389,11 @@ function randomBackgroundSong(play){
     }
 }
 
+function randomVictorySong(play){
+    switch (play){
+        case 'play': victorySong[randomSongNum].song.play(); break;
+    }
+}
 
 function enterButton(){
     document.onkeydown = function(event){
@@ -1571,6 +1576,7 @@ function gameOver(){
     next2.className = 'display-none';
     document.getElementById('fight-scene').remove();
     createGameOverScreen();
+    randomVictorySong('play');
 }
 
 function createGameOverScreen(){
