@@ -400,11 +400,9 @@ function randomVictorySong(play){
 
 function enterButton(){
     document.onkeydown = function(event){
-        if (document.getElementsByClassName('p2-button')[0].className.indexOf('display-none') == -1){
-            switch(event.keyCode){
-                case 13: next1.click(); break;
-            }
-        };
+       switch(event.keyCode){
+            case 13: next1.click(); break;
+        }
     }
 }
 
@@ -1491,7 +1489,7 @@ function Fight(){
         // if (current2)current2Javamon = current2;
         // if (player1Move) player1Move = null;
         // if (player2Move) player2Move = null;
-        // showJavamon(current1Javamon, current2Javamon);
+        setTimeout(function(){showJavamon(current1Javamon, current2Javamon)}, 1000);
         // changeHealth();w
     }
 }
