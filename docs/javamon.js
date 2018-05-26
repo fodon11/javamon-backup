@@ -1127,7 +1127,7 @@ function createMoveButtons(current, num){
         // console.log(current.moves[i])
         let button = document.createElement('button');
         let move = current.moves[i].name;
-        button.innerHTML =  move + '<br>' + 'Power: ' + current.moves[i].power;
+        button.innerHTML =  move /* + '<br>' + 'Power: ' + current.moves[i].power */;
         button.id = move;
         switch (num){
             case 1: button.className = 'p1-button move1'; column1.appendChild(button); break;
